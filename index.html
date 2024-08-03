@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <style>
       a {
@@ -23,20 +24,34 @@
         color: #434455;
         font-family: Roboto, sans-serif;
       }
+      h1, h2, h3, h4, h5, h6{
+        margin: 0;
+      }
+      p{
+        margin: 0;
+      }
+      img{
+        display: block;
+      }
+      ul, ol{
+        margin: 0;
+        padding: 0;
+      }
     </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="title-one">Web<span class="title-two">Studio</span></a>
-        <ul>
+    <header class="page-header">
+      <div class="container header-container">
+      <nav class="head-nav">
+        <a class="title-one header-logo" href="./index.html">Web<span class="title-two">Studio</span></a>
+        <ul class="nav-ul">
           <li><a class="nav-link" href="./index.html">Studio</a></li>
           <li><a class="nav-link" href="">Portfolio</a></li>
           <li><a class="nav-link" href="">Contacts</a></li>
         </ul>
       </nav>
       <address class="add">
-        <ul>
+        <ul class="add-ul">
           <li>
             <a href="mailto:info@devstudio.com" class="add-link">info@devstudio.com</a
             >
@@ -46,17 +61,21 @@
           </li>
         </ul>
       </address>
+    </div>
     </header>
 
     <main>
+      <div class="title-container">
       <section class="sec-one">
         <h1 class="sec-one-title">Effective Solutions for Your Business</h1>
         <button type="button" class="title-button">Order Service</button>
+      </div>
       </section>
 
       <section>
         <h2 hidden>Our Services</h2>
-        <ul>
+        <div class="contaider sec-two-container">
+        <ul class="sec-two-ul">
           <li>
             <h3 class="sec-two-title">Strategy</h3>
             <p class="sec-two-text">
@@ -86,11 +105,13 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
 
       <section class="sec-three">
+        <div class="container sec-three-container">
         <h2 class="sec-three-title">Our Team</h2>
-        <ul>
+        <ul class="sec-three-ul">
           <li class="sec-three-li">
             <img
               src="./images/mark-guerrero.jpg"
@@ -132,11 +153,13 @@
             <p class="sec-three-desc">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
       <section class="sec-four">
+        <div class="sec-four-container">
         <h2 class="sec-four-title">Our Portfolio</h2>
-        <ul>
-            <li>
+        <ul class="sec-four-ul">
+            <li class="sec-four-li">
             <img
               src="./images/li-one.jpg"
               alt="Banking App"
@@ -197,15 +220,19 @@
               <p class="sec-four-desc">Marketing</p>
            </li>
         </ul>
+      </div>
+      </div>
       </section>
     </main>
 
     <footer class="sec-five">
-      <a href="./index.html" class="title-three">Web<span class="title-four">Studio</span></a>
+      <div class="sec-five-container">
+      <a class="title-three footer-logo" href="./index.html">Web<span class="title-four">Studio</span></a>
       <p class="sec-five-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
+    </div>
     </footer>
   </body>
 </html>
