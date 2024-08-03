@@ -131,7 +131,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.sec-two-li{
+.sec-two-il{
     width: calc((100% - 72px) / 4);
 }
 .sec-two-ul{
@@ -283,5 +283,5 @@
     max-width: 264px;
 }
 .footer-logo{
-    display: inline-block !important;
+    display: inline-block;
 }
