@@ -248,7 +248,6 @@
     color: #434455;
 }
 .sec-five-container{
-    display: flex;
     max-width: 1158px;
     flex-direction: column;
 }
